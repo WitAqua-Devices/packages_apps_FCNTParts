@@ -3,4 +3,7 @@
 
     <!-- Action Key -->
     <bool name="config_actionKeySupported">false</bool>
+
+    <!-- Exlider -->
+    <bool name="config_exliderSupported">true</bool>
 </resources>

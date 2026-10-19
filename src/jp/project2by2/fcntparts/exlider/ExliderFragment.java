@@ -175,4 +175,8 @@ public class ExliderFragment extends PreferenceFragmentCompat
         }
         return services;
     }
+
+    public static boolean isExliderSupported(Context context) {
+        return context.getResources().getBoolean(R.bool.config_exliderSupported);
+    }
 }

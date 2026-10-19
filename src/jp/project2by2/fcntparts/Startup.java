@@ -14,6 +14,8 @@ import jp.project2by2.fcntparts.utils.FileUtils;
 
 import jp.project2by2.fcntparts.actionkey.ActionKeyActivity;
 import jp.project2by2.fcntparts.actionkey.ActionKeyFragment;
+import jp.project2by2.fcntparts.exlider.ExliderActivity;
+import jp.project2by2.fcntparts.exlider.ExliderFragment;
 import jp.project2by2.fcntparts.holdondisplay.HoldOnDisplayService;
 
 public class Startup extends BroadcastReceiver {
@@ -23,6 +25,9 @@ public class Startup extends BroadcastReceiver {
 
         // Action Key
         ComponentUtils.toggleComponent(context, ActionKeyActivity.class, ActionKeyFragment.isActionKeySupported(context));
+
+        // Exlider
+        ComponentUtils.toggleComponent(context, ExliderActivity.class, ExliderFragment.isExliderSupported(context));
 
         HoldOnDisplayService.updateState(context);
 
